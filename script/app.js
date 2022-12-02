@@ -4,20 +4,7 @@ const categoriaSobremesa = document.querySelectorAll(".sobremesa__btn");
 const modal = document.querySelector(".modal");
 const cancelarBtn = document.querySelector(".modal #cancelar")
 const layer = document.querySelector(".layer")
-
 let qntItemCarrinho = 0;
-
-categoriaPratos.forEach((item) => {
-  item.addEventListener("click", selecionarItem)
-})
-categoriaBebida.forEach((item) => {
-  item.addEventListener("click", selecionarItem)
-})
-categoriaSobremesa.forEach((item) => {
-  item.addEventListener("click", selecionarItem)
-})
-
-
 
 function selecionarItem(event) {
   let selected;
@@ -90,3 +77,14 @@ function cancelar() {
   modal.style.display = "none"
   layer.style.display = "none"
 }
+
+
+categoriaPratos.forEach((item) => {
+  item.addEventListener("click", selecionarItem)
+})
+categoriaBebida.forEach((item) => {
+  item.addEventListener("click", selecionarItem)
+})
+categoriaSobremesa.forEach((item) => {
+  item.addEventListener("click", selecionarItem)
+})

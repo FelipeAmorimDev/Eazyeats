@@ -3,6 +3,7 @@ const categoriaBebida = document.querySelectorAll(".bebida__btn");
 const categoriaSobremesa = document.querySelectorAll(".sobremesa__btn");
 const modal = document.querySelector(".modal");
 const cancelarBtn = document.querySelector(".modal #cancelar")
+
 const layer = document.querySelector(".layer")
 let qntItemCarrinho = 0;
 
@@ -51,13 +52,13 @@ function carrinhoLiberar() {
   }
 
   botaoPedido.addEventListener("click", () => {
-    layer.style.display = "block"
-    const itensName = document.querySelectorAll(".item-checked h2")
-    const valores = document.querySelectorAll(".item-checked span");
-    var total = parseFloat(valores[0].outerText.replace("R$ ", "")) +
+    let itensName = document.querySelectorAll(".item-checked h2")
+    let valores = document.querySelectorAll(".item-checked span");
+    let total = parseFloat(valores[0].outerText.replace("R$ ", "")) +
       parseFloat(valores[1].outerText.replace("R$ ", "")) +
       parseFloat(valores[2].outerText.replace("R$ ", ""));
 
+    layer.style.display = "block"
 
     modal.innerHTML = `<h2>Confirme seu pedido</h2>
                       <ul class="modal__list">
@@ -66,7 +67,7 @@ function carrinhoLiberar() {
                         <li class="modal__item">${itensName[2].outerText}<span>${valores[2].outerText.replace("R$ ", "")}</span></li>
                       </ul>
                       <p>Total: <span>R$${total}</span></p>
-                      <button id="fazer-pedido">Tudo certo,pode pedir!</button>
+                      <button id="fazer-pedido" onclick="fazerPedido()">Tudo certo,pode pedir!</button>
                       <button id="cancelar" onclick="cancelar()">Cancelar</button>`;
 
     modal.style.display = "block";
@@ -76,6 +77,22 @@ function carrinhoLiberar() {
 function cancelar() {
   modal.style.display = "none"
   layer.style.display = "none"
+}
+
+function fazerPedido() {
+  let itensName = document.querySelectorAll(".item-checked h2")
+  let valores = document.querySelectorAll(".item-checked span");
+  let total = parseFloat(valores[0].outerText.replace("R$ ", "")) +
+    parseFloat(valores[1].outerText.replace("R$ ", "")) +
+    parseFloat(valores[2].outerText.replace("R$ ", ""));
+  const templateCupom = `Olá, gostaria de fazer o pedido:
+- Prato: ${itensName[0].innerHTML}
+- Bebida: ${itensName[1].innerHTML}
+- Sobremesa: ${itensName[2].innerHTML}
+Total: R$ ${total.toFixed(2)}`
+
+  window.location.href = "https://wa.me/5587981082039?text=" + encodeURIComponent(templateCupom)
+
 }
 
 

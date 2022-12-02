@@ -69,7 +69,7 @@ button {
   background-color: #eee;
   max-width: 960px;
   margin: 0 auto;
-  
+  position: relative;
 
 }
 
@@ -205,6 +205,81 @@ button {
   transition: .3s;
   
 }
+
+.modal{
+  display: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #50D074;
+  color: #fff;
+  min-width: 340px;
+  padding: 12px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  z-index: 30;
+}
+
+.modal h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal__list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.modal__item,.modal p{
+  display: flex;
+  justify-content: space-between;
+}
+.modal p{
+  font-weight: 700;
+}
+
+.modal #fazer-pedido{
+  background-color: #fff;
+  width: calc(100% - 40px);
+  padding: 12px 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  margin-top: 26px;
+  font-size: 1rem;
+  color: #50D074;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.modal #cancelar{
+  width: calc(100% - 40px);
+  padding: 12px 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.layer{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #CBCBCB;
+  opacity: .5;
+  z-index: 22;
+  }
 
 @media (max-width:960px){
   .header-container {

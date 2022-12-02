@@ -1,6 +1,7 @@
 const categoriaPratos = document.querySelectorAll(".pratos__item__btn");
 const categoriaBebida = document.querySelectorAll(".bebida__btn");
 const categoriaSobremesa = document.querySelectorAll(".sobremesa__btn");
+
 const modal = document.querySelector(".modal");
 const cancelarBtn = document.querySelector(".modal #cancelar")
 
@@ -14,6 +15,7 @@ function selecionarItem(event) {
 
   if (selected.length === 0) {
     event.target.parentElement.classList.add("item-checked")
+    event.path[1].children[0].children[3].children[0].children[0].style.visibility = "visible"
     qntItemCarrinho++;
     if (qntItemCarrinho === 3) {
       carrinhoLiberar()
@@ -24,7 +26,9 @@ function selecionarItem(event) {
     let selectId = selected[0].id
     if (!(eventId === selectId)) {
       selected[0].classList.remove("item-checked")
+      selected[0].children[0].children[3].children[0].children[0].style.visibility = "hidden"
       event.target.parentElement.classList.add("item-checked")
+      event.path[1].children[0].children[3].children[0].children[0].style.visibility = "visible"
     }
   }
   return event;

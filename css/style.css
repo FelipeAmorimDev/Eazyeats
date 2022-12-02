@@ -162,7 +162,16 @@ button {
   font-family: "Roboto";
   font-size: 0.933rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
+  }
+.pratos__price-container span  i{
+  visibility: hidden;
+  color: #50D074;
 }
+
 
 .pratos__item__btn,
 .bebida__btn,

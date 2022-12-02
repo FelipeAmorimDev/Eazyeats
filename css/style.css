@@ -165,11 +165,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: .3s;
   }
+  
 .pratos__price-container span  i{
   visibility: hidden;
   color: #50D074;
+  transition: .3s;
+  opacity: .3;
 }
 
 

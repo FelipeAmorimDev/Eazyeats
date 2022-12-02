@@ -16,6 +16,7 @@ function selecionarItem(event) {
   if (selected.length === 0) {
     event.target.parentElement.classList.add("item-checked")
     event.path[1].children[0].children[3].children[0].children[0].style.visibility = "visible"
+    event.path[1].children[0].children[3].children[0].children[0].style.opacity = "1"
     qntItemCarrinho++;
     if (qntItemCarrinho === 3) {
       carrinhoLiberar()
@@ -27,8 +28,10 @@ function selecionarItem(event) {
     if (!(eventId === selectId)) {
       selected[0].classList.remove("item-checked")
       selected[0].children[0].children[3].children[0].children[0].style.visibility = "hidden"
-      event.target.parentElement.classList.add("item-checked")
+      selected[0].children[0].children[3].children[0].children[0].style.opacity = "0"
+            event.target.parentElement.classList.add("item-checked")
       event.path[1].children[0].children[3].children[0].children[0].style.visibility = "visible"
+      event.path[1].children[0].children[3].children[0].children[0].style.opacity = "1"
     }
   }
   return event;

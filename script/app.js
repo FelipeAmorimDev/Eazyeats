@@ -29,7 +29,8 @@ function selecionarItem(event) {
       selected[0].classList.remove("item-checked")
       selected[0].children[0].children[3].children[0].children[0].style.visibility = "hidden"
       selected[0].children[0].children[3].children[0].children[0].style.opacity = "0"
-            event.target.parentElement.classList.add("item-checked")
+      
+      event.target.parentElement.classList.add("item-checked")
       event.path[1].children[0].children[3].children[0].children[0].style.visibility = "visible"
       event.path[1].children[0].children[3].children[0].children[0].style.opacity = "1"
     }

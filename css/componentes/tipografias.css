@@ -1,2 +1,30 @@
-/* font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif; */
+.font-1-xxl {
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+}
+
+.font-1-xl {
+  font-family: "Righteous";
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.font-2-x,.font-2-x-r{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.font-2-x-r{
+font-weight: 400;
+}
+
+.font-2-l{
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+.font-2-s{
+  font-family: "Roboto";
+  font-size: 0.933rem;
+  font-weight: 500;
+}

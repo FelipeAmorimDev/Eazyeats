@@ -19,15 +19,12 @@
   padding-top: 80px;
 }
 
-.pratos h1,
-.bebidas h1,
-.sobremesa h1 {
+.pratos h2,
+.bebidas h2,
+.sobremesa h2 {
   padding-top: 26px;
   margin-bottom: 20px;
-  font-family: "Righteous";
-  font-size: 1.5rem;
   color: #333333;
-  letter-spacing: 1px;
 }
 
 .pratos__list {
@@ -74,12 +71,10 @@
   flex: 1 0 144px;
 }
 
-.pratos__item--pratos h2,
-.pratos__item--refri h2,
-.pratos__item--sobremesa h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  margin-top: 10px;
+.pratos__item--pratos h3,
+.pratos__item--refri h3,
+.pratos__item--sobremesa h3 {
+   margin-top: 10px;
 }
 
 .pratos__item--pratos p,

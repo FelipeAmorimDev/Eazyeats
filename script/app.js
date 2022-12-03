@@ -57,7 +57,7 @@ function carrinhoLiberar() {
   }
 
   botaoPedido.addEventListener("click", () => {
-    let itensName = document.querySelectorAll(".item-checked h2")
+    let itensName = document.querySelectorAll(".item-checked h3")
     let valores = document.querySelectorAll(".item-checked span");
     let total = parseFloat(valores[0].outerText.replace("R$ ", "")) +
       parseFloat(valores[1].outerText.replace("R$ ", "")) +
@@ -85,7 +85,7 @@ function cancelar() {
 }
 
 function fazerPedido() {
-  let itensName = document.querySelectorAll(".item-checked h2")
+  let itensName = document.querySelectorAll(".item-checked h3")
   let valores = document.querySelectorAll(".item-checked span");
   let total = parseFloat(valores[0].outerText.replace("R$ ", "")) +
     parseFloat(valores[1].outerText.replace("R$ ", "")) +

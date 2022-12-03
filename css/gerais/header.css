@@ -12,13 +12,12 @@
 }
 
 .header-container a {
-  font-family: "Righteous", cursive;
-  font-size: 2rem;
   color: #fff;
 }
 
-.header-container p {
+.header-container h1 {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   color: #fff;
 }
 

@@ -1,0 +1,30 @@
+/* Header */
+.header-container {
+  background-color: rgb(255, 0, 0);
+  padding: 10px 16px 16px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 6px 6px 1px;
+  position: fixed;
+  width: calc(960px - 32px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22;
+
+}
+
+.header-container a {
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header-container p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+@media (max-width:960px) {
+  .header-container {
+    width: calc(100% - 32px);
+  }
+}
+

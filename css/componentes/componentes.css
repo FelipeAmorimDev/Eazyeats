@@ -1,0 +1,14 @@
+.botao button {
+  min-height: 66px;
+  width: 350px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #CBCBCB;
+  padding: 12px 90px;
+  border-radius: 30px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  transition: .3s;
+}

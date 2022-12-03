@@ -12,13 +12,11 @@
 }
 
 .header-container a {
-  color: #fff;
+  color:  var(--cor-0);
 }
 
 .header-container h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: #fff;
+  color:  var(--cor-0);
 }
 
 @media (max-width:960px) {
@@ -26,4 +24,3 @@
     width: calc(100% - 32px);
   }
 }
-

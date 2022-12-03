@@ -45,9 +45,9 @@
   box-sizing: border-box;
   /* max-height: 235px; */
   padding: 8px;
-  background-color: #fff;
+  background-color: var(--cor-0);
   border-radius: 16px;
-  border: 4px solid #fff;
+  border: 4px solid var(--cor-0);
   cursor: pointer;
   position: relative;
 }
@@ -59,8 +59,8 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 8px;
-  background-color: #fff;
-  border: 4px solid #fff;
+  background-color: var(--cor-0);
+  border: 4px solid var(--cor-0);
   border-radius: 16px;
   cursor: pointer;
   position: relative;
@@ -74,28 +74,23 @@
 .pratos__item--pratos h3,
 .pratos__item--refri h3,
 .pratos__item--sobremesa h3 {
-   margin-top: 10px;
+  margin-top: 10px;
 }
 
 .pratos__item--pratos p,
 .pratos__item--refri p,
 .pratos__item--sobremesa p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.833rem;
   margin: 10px 0px;
 }
 
 .pratos__price-container span {
-  font-family: "Roboto";
-  font-size: 0.933rem;
-  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .pratos__price-container span i {
-  color: #50D074;
+  color: var(--cor-2);
   transition: .3s;
   opacity: 0;
 }
@@ -111,12 +106,12 @@
 }
 
 .item-checked {
-  border-color: green;
+  border-color: var(--cor-2);
 }
 
 .botao {
   padding: 16px 32px;
-  background-color: #fff;
+  background-color: var(--cor-0);
   position: fixed;
   bottom: 0px;
   width: calc(960px - 64px);

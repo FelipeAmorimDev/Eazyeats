@@ -1,9 +1,8 @@
-
 .modal {
   display: none;
   font-family: "Roboto", sans-serif;
-  background-color: #50D074;
-  color: #fff;
+  background-color: var(--cor-2);
+  color: var(--cor-0);
   min-width: 340px;
   padding: 12px;
   box-sizing: border-box;
@@ -39,7 +38,7 @@
 }
 
 .modal #fazer-pedido {
-  background-color: #fff;
+  background-color: var(--cor-0);
   width: calc(100% - 40px);
   padding: 12px 40px;
   position: relative;
@@ -48,7 +47,7 @@
   border-radius: 30px;
   margin-top: 26px;
   font-size: 1rem;
-  color: #50D074;
+  color: var(--cor-2);
   font-weight: 600;
   cursor: pointer;
 
@@ -61,7 +60,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
-  color: #fff;
+  color: var(--cor-0);
   font-size: 1rem;
   cursor: pointer;
 }
@@ -72,7 +71,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #CBCBCB;
+  background-color: var(--cor-1);
   opacity: .5;
   z-index: 22;
 }
